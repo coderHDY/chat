@@ -11,12 +11,11 @@ body {
 .chat {
   display: flex;
   flex-direction: column;
-  width: 20rem;
-  height: 90vh;
-  /* width: 100%;
-  height: 100%; */
+  /* width: 20rem;
+  height: 90vh; */
+  width: 100%;
+  height: 100%;
   background-color: rgb(255, 255, 255);
-  border-radius: 1rem;
   box-shadow: 0 2px 5px 5px rgb(212, 223, 232);
   overflow: hidden;
 }
