@@ -3,12 +3,11 @@
   padding: 0;
 }
 body {
-  display: grid;
-  place-items: center;
   height: 100vh;
-  background-color: rgb(247, 189, 144);
+  background-color: rgb(130, 212, 252);
 }
 .chat {
+  position: relative;
   display: flex;
   flex-direction: column;
   /* width: 20rem;
@@ -17,6 +16,7 @@ body {
   height: 100%;
   background-color: rgb(255, 255, 255);
   box-shadow: 0 2px 5px 5px rgb(212, 223, 232);
+  box-sizing: border-box;
   overflow: hidden;
 }
 .title {
