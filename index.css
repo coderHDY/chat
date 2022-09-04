@@ -4,6 +4,7 @@
 }
 body {
   height: 100vh;
+  width: 100vw;
   background-color: rgb(130, 212, 252);
 }
 .chat {
@@ -41,9 +42,10 @@ body {
   padding: .5rem;
 }
 .msg.me {
+  position: relative;
   border-top-right-radius: 0;
   background-color: rgb(167, 240, 128);
-  align-self: end;
+  align-self: flex-end;
 }
 .msg.me::after {
   content: "";
