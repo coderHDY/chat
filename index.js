@@ -6,6 +6,7 @@ const request = async (val) => await (await fetch(`${BASE_URL}/api/robot/${val}`
   method: "GET",
 })).json();
 
+
 const sendMe = (val) => {
   const meMsg = document.createElement("div");
   meMsg.classList.add("msg", "me");
