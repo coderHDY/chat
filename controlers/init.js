@@ -1,5 +1,5 @@
-import { ipt, send } from "./doms";
-import { sendRobotMsg, initMsg } from "./actions";
+import { ipt, send } from "./doms.js";
+import { sendRobotMsg, initMsg } from "./actions.js";
 const init = () => {
     initMsg("robot");
     send.addEventListener("click", sendRobotMsg);

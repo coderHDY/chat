@@ -1,6 +1,6 @@
-import { ipt, msgBox } from "./doms";
-import { chatRobot } from "./request";
-import { addListStorage, modelMsg, getStorage } from "./utils";
+import { ipt, msgBox } from "./doms.js";
+import { chatRobot } from "./request.js";
+import { addListStorage, modelMsg, getStorage } from "./utils.js";
 const parseMsg = (val) => {
     const brReg = /\{br\}/gi;
     const faceReg = /\{face:\w+\}/gi;
@@ -26,7 +26,7 @@ const sendMe = (val) => {
 const genMsgEl = (val, classList = []) => {
     const msgEl = document.createElement("div");
     msgEl.classList.add(...classList);
-    msgEl.innerText = typeof val === "string" ? val : val.val;
+    msgEl.innerHTML = typeof val === "string" ? val : val.val;
     return msgEl;
 }
 const appendChild = (...el) => {
